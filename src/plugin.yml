@@ -1,0 +1,15 @@
+name: BlockStandActions
+version: 1.0.2
+author: UUT118
+main: me.UUT118.CrazyScenarios.BlockStandActions.Main
+api-version: 1.15
+commands:
+  setenabledinworld:
+    usage: "/setenabledinworld <true/false>"
+    description: "Set whether or not the BlockStandActions plugin acts in this world."
+permissions:
+  blockstandactions.*:
+    children:
+      blockstandactions.commands.setenabledinworld.use: true
+  blockstandactions.commands.setenabledinworld.use:
+    default: op
